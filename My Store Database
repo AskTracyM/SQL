@@ -1,0 +1,13 @@
+create table movies (id integer primary key, genre text, price integer, sales integer, month text);
+
+INSERT INTO movies VALUES (1, 'Action', 8, 26, 'May');
+INSERT INTO movies VALUES (2, 'Cartoon', 6, 12, 'May');
+INSERT INTO movies VALUES (3, 'Comedy', 7, 32, 'May'); 
+INSERT INTO movies VALUES (4, 'Drama', 8, 18, 'May');
+INSERT INTO movies VALUES (5, 'Horror', 5, 13, 'May');
+INSERT INTO movies VALUES (6, 'Romance', 8, 23, 'May');
+INSERT INTO movies VALUES (7, 'Western', 3, 8, 'May');
+
+SELECT * from movies ORDER BY price desc;
+SELECT GENRE, (PRICE*SALES) FROM MOVIES;
+SELECT MONTH, SUM(price*SALES) FROM MOVIES;
